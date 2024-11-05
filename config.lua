@@ -1,3 +1,5 @@
+-- DS Passive production V1.1.0
+
 Config = {}
 
 Config.Framework = "ESX" -- "ESX" o "QB"
@@ -29,7 +31,7 @@ Config.Locations = {
         showBlip = false              -- Non mostrare il blip per questa posizione
     },
     {
-        location = vector3(338.4655, -1345.759, 32.51403),
+        location = vector3(338.4655, -1345.759, 32.71403),
         items = {
             { itemName = "bread", productionTime = 10, quantity = 1 }
         },
@@ -52,6 +54,8 @@ Config.Marker = {
     scale = vector3(1.0, 1.0, 1.0),    -- Dimensioni del marker
     color = { r = 0, g = 150, b = 150, a = 100 } -- Colore del marker
 }
+
+Config.DrawDistance = 10.0  -- Definisci la distanza di rendering desiderata
 
 -- Configurazioni grafiche per il timer
 Config.DisplayRemainingTime = true  -- True per mostrare il timer del tempo rimanente, false per nasconderlo
@@ -91,3 +95,4 @@ Config.Locales = {
     ["minutes"] = "minutes",
     ["seconds"] = "seconds"
 }
+
